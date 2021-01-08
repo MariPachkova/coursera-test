@@ -1,7 +1,86 @@
-body {
-	font-size: 130%;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+
+}
+
+div#container{
+	position: relative;
+
+
 }
 
 h1 {
 	text-align: center;
+}
+
+div {
+	background-color: grey;
+	width: 400px;
+	height: 100px;
+	border: 1px solid black;
+	
+
+
+}
+
+
+
+p{
+	background-color: grey;
+	width: 400px;
+	padding: 1px;
+	margin-bottom: 5px;
+
+}
+
+#C {
+	background-color: pink;
+	text-align: right; 
+	width: 60px; 
+	position: relative;
+	left: 338px;
+	border: 1px solid black;
+
+}
+
+#BD {
+	position: absolute;
+	top: 0;
+	left: 420px;
+	border: 1px solid black;
+}
+
+
+#B {
+	background-color: tomato;
+	text-align: right; 
+	width: 60px; 
+	position: relative;
+	left: 338px;
+	border: 1px solid black;
+
+}
+
+#SD {
+	position: absolute;
+	top: 0;
+	left: 840px;
+	border: 1px solid black;
+}
+
+#S {
+	background-color: yellow;
+	text-align: right; 
+	width: 60px; 
+	position: relative;
+	left: 338px;
+	border: 1px solid black;
+	
+}
+
+section {
+	text-align: center;
+
 }
