@@ -1,86 +1,111 @@
 
+/***** Base style*****/
 *{
 	box-sizing: border-box;
 	margin: 0;
 
 }
 
-div#container{
-	position: relative;
-
-
-}
 
 h1 {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 div {
 	background-color: grey;
-	width: 400px;
+	width: 30%;
 	height: 100px;
 	border: 1px solid black;
-	
-
+	margin-right: 4px;
+	margin-left: 4px;
 
 }
 
 
-
 p{
-	background-color: grey;
-	width: 400px;
+	width: 60px;
 	padding: 1px;
 	margin-bottom: 5px;
+	float: right;
+	border: 1px solid black;
+	text-align: center; 
 
 }
 
 #C {
 	background-color: pink;
-	text-align: right; 
-	width: 60px; 
-	position: relative;
-	left: 338px;
-	border: 1px solid black;
 
 }
-
-#BD {
-	position: absolute;
-	top: 0;
-	left: 420px;
-	border: 1px solid black;
-}
-
 
 #B {
 	background-color: tomato;
-	text-align: right; 
-	width: 60px; 
-	position: relative;
-	left: 338px;
-	border: 1px solid black;
-
-}
-
-#SD {
-	position: absolute;
-	top: 0;
-	left: 840px;
-	border: 1px solid black;
+	color: white;
 }
 
 #S {
 	background-color: yellow;
-	text-align: right; 
-	width: 60px; 
-	position: relative;
-	left: 338px;
-	border: 1px solid black;
 	
 }
 
 section {
-	text-align: center;
+	clear: both;
+	margin: 5px;
 
 }
+
+title {
+	text-align: right;
+}
+
+/***** Desktop *****/
+@media (min-width: 992px) {
+	div{
+		float: left;
+	}
+}
+
+	
+
+
+/***** Ipad *****/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+	#CD{
+		width: 50%
+	}
+	#BD{
+		width: 50%
+	}
+	
+	div#BD{
+		position: relative;
+		left: 50%;
+		bottom: 100px;
+		margin-left: 10px;
+	}
+	
+	#SD{
+		width: 100%
+
+	}
+
+	div#SD {
+		position: relative;
+		bottom: 100px;
+		margin-top: 8px;
+	}
+
+
+}
+
+
+/***** Iphone ****/
+@media (max-width: 767px) {
+	div {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
